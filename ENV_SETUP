@@ -1,0 +1,18 @@
+#apache needs to create ini files in that folder
+chmod 777 scr
+
+#make sure all ini & log files are writable by apache
+chmod 666 scr/*.ini scr/*.log
+
+#apache httpd.conf setup
+<Directory "/home/thf/Development/sites">
+    AllowOverride None
+    Options None
+    Require all granted
+</Directory>
+
+<IfModule alias_module>
+    Alias /schooldoc /home/thomas/Development/sites/school/doc
+    ScriptAlias /schoolscr /home/thomas/Development/sites/school/scr
+</IfModule>
+

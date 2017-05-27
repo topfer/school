@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="ISO-8859-1">
+        <script src="math.js"></script>
+    </head>
+	<body onLoad="loaded()">
+		<form name="math" action="/rekenscr/save_setup.py" mathod="post">
+			Rows : <input type="text" name="math.main.rows" value="20" size="4"/>
+			<br/>
+			Columns : <input type="text" name="math.main.columns" value="4" size="4"/>
+			<br/>
+			Vertical separator : <input type="text" name="math.main.space.vertical" value="30" size="4"/>
+			<br/>
+            <hr/>
+			<input type="checkbox" name="math.addition.enable" checked="true"/> Additions max : <input type="text" name="math.addition.max" value="50" size="4"/>
+			<br/>
+			<input type="checkbox" name="math.substraction.enable" checked="true"/> Substraction max : <input type="text" name="math.substraction.max" value="30" size="4"/>
+			<br/>
+
+            <input type="checkbox" name="math.multiply.enable" checked="true"/> Multiply : 
+            0x<input type="checkbox" checked="true" onChange="checkChange(this, 'multiply', 0)"/><input type="hidden" id="math.multiply.0" name="math.multiply.0"/>
+            1x<input type="checkbox" checked="true" onChange="checkChange(this, 'multiply', 1)"/><input type="hidden" id="math.multiply.1" name="math.multiply.1"/>
+            2x<input type="checkbox" checked="true" onChange="checkChange(this, 'multiply', 2)"/><input type="hidden" id="math.multiply.2" name="math.multiply.2"/>
+            3x<input type="checkbox" checked="true" onChange="checkChange(this, 'multiply', 3)"/><input type="hidden" id="math.multiply.3" name="math.multiply.3"/>
+            4x<input type="checkbox" checked="true" onChange="checkChange(this, 'multiply', 4)"/><input type="hidden" id="math.multiply.4" name="math.multiply.4"/>
+            5x<input type="checkbox" checked="true" onChange="checkChange(this, 'multiply', 5)"/><input type="hidden" id="math.multiply.5" name="math.multiply.5"/>
+            6x<input type="checkbox" checked="true" onChange="checkChange(this, 'multiply', 6)"/><input type="hidden" id="math.multiply.6" name="math.multiply.6"/>
+            7x<input type="checkbox" checked="true" onChange="checkChange(this, 'multiply', 7)"/><input type="hidden" id="math.multiply.7" name="math.multiply.7"/>
+            8x<input type="checkbox" checked="true" onChange="checkChange(this, 'multiply', 8)"/><input type="hidden" id="math.multiply.8" name="math.multiply.8"/>
+            9x<input type="checkbox" checked="true" onChange="checkChange(this, 'multiply', 9)"/><input type="hidden" id="math.multiply.9" name="math.multiply.9"/>
+            <br/>
+
+            <input type="checkbox" name="math.division.enable" checked="true"/> Division : 
+            0x<input type="checkbox" check.math.division.0 onChange="checkChange(this, 'division', 0)"/><input type="hidden" id="math.division.0" name="math.division.0"/>
+            1x<input type="checkbox" check.math.division.1 onChange="checkChange(this, 'division', 1)"/><input type="hidden" id="math.division.1" name="math.division.1"/>
+            2x<input type="checkbox" check.math.division.2 onChange="checkChange(this, 'division', 2)"/><input type="hidden" id="math.division.2" name="math.division.2"/>
+            3x<input type="checkbox" check.math.division.3 onChange="checkChange(this, 'division', 3)"/><input type="hidden" id="math.division.3" name="math.division.3"/>
+            4x<input type="checkbox" check.math.division.4 onChange="checkChange(this, 'division', 4)"/><input type="hidden" id="math.division.4" name="math.division.4"/>
+            5x<input type="checkbox" check.math.division.5 onChange="checkChange(this, 'division', 5)"/><input type="hidden" id="math.division.5" name="math.division.5"/>
+            6x<input type="checkbox" check.math.division.6 onChange="checkChange(this, 'division', 6)"/><input type="hidden" id="math.division.6" name="math.division.6"/>
+            7x<input type="checkbox" check.math.division.7 onChange="checkChange(this, 'division', 7)"/><input type="hidden" id="math.division.7" name="math.division.7"/>
+            8x<input type="checkbox" check.math.division.8 onChange="checkChange(this, 'division', 8)"/><input type="hidden" id="math.division.8" name="math.division.8"/>
+            9x<input type="checkbox" check.math.division.9 onChange="checkChange(this, 'division', 9)"/><input type="hidden" id="math.division.9" name="math.division.9"/>
+            <br/>
+
+			<input type="submit" name="submit" value="Save"/>
+		</form>
+	</body>
+</html>
+

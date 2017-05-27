@@ -1,0 +1,35 @@
+.sepcell {
+	width: 0px;
+	height: 10px;
+	/* background-color: lightblue; */
+}
+
+.workcell {
+	width: 200px;
+	/* background-color: lightgray; */
+}
+
+.rezuser {
+    width: 80px;
+    border: 0px;
+    padding: 1px;
+    color: black;
+    font-size: medium;
+    font-style: normal;
+}
+
+.rezuser_ok {
+    color: green;
+}
+
+.rezuser_nok {
+    color: red;
+}
+
+.incomplete_cell {
+    border: 1px solid blue;
+}
+
+table {
+	border : 0px;
+}
